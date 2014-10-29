@@ -17,7 +17,12 @@
 			echo "successfully created database: " . $database;
 		}
 	}
+	else{
+		echo "Database already exists.";
+	}
+	/*the "if statement" checks if the database does not exist, and creates it if it doesn't.
+	If it does exist, then the else statement is run.*/
 	/*exclamation point means not*/
-	/*at this point, there is no database connection*/
+
 	$connection->close();
 ?>
