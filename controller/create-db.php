@@ -30,6 +30,7 @@
 		. "title varchar(255) NOT NULL,"
 		. "post test NOT NULL,"
 		. "PRIMARY KEY (id)"); 
+	/*creates a table using a query, just like the database on line 15*/
 
 	$connection->close();
 ?>
