@@ -28,9 +28,17 @@
 	$query = $connection->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "title varchar(255) NOT NULL,"
-		. "post test NOT NULL,"
-		. "PRIMARY KEY (id)"); 
+		. "post text NOT NULL,"
+		. "PRIMARY KEY (id))"); 
 	/*creates a table using a query, just like the database on line 15*/
 
+	if($query) {
+		echo "Successfully created table: posts";
+	}
+	/*checks to see if table exists*/
+	else{
+		echo "<p>$connection->error</p>";
+	}
+	/*HTML tags are compatible in PHP*/
+
 	$connection->close();
-?>

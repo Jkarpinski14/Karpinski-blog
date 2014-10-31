@@ -24,7 +24,7 @@
 					$this->nickname = $nickname;
 				}
 				function vroom(){
-					return "My car is a " . $this->model  . " and it's " . $this->color . " who I call " . $this->nickname . ".";
+					return " My car is a " . $this->model  . " and it's " . $this->color . " who I call " . $this->nickname . ".";
 				}
 				
 			}
