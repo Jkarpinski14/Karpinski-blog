@@ -1,12 +1,9 @@
-<html>
-	<head>
-		<title>
-			Index.php
-		</title>
-	</head>
-	<body>
+
 		<?php
+			require_once(__DIR__ . "/view/header.php");
 			require_once(__DIR__ . "/controller/create-db.php");
+			require_once(__DIR__ . "/view/footer.php");
+			/*Holds the index's header and footer in separate files, for conveniece*/
 			/**
 			* 
 			*/
@@ -31,5 +28,4 @@
 			$car1 = new Car("black", "mustang", "BillyBob");
 			echo $car1->vroom();
 		?>
-	</body>
-</html>
+	
