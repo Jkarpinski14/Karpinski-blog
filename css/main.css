@@ -1,0 +1,15 @@
+body{
+	background-color: red;
+}
+label{
+	background-color: yellow;
+}
+input{
+	background-color: green;
+}
+textarea{
+	background-color: blue;
+}
+h1{
+	background-color: orange;
+}
