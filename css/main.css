@@ -1,15 +1,28 @@
 body{
 	background-color: red;
+	font-style: italic;
+	font-size: 25px;
+	text-align: center;
 }
 label{
-	background-color: yellow;
+	background-color: red;
 }
 input{
-	background-color: green;
+	background-color: orange;
 }
 textarea{
-	background-color: blue;
+	background-color: orange;
 }
 h1{
 	background-color: orange;
 }
+
+@media screen and (max-width:320px){
+	form{
+		
+		width:100%;
+		
+	}
+	h1 {
+		width: 100%;
+	}
