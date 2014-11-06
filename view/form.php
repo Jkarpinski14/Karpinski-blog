@@ -12,4 +12,7 @@
 		<textarea name="post"></textarea>
 		<!--creates the header post and the box to enter data in the post box-->
 	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>
