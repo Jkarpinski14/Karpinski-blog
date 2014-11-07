@@ -16,6 +16,10 @@ textarea{
 h1{
 	background-color: orange;
 }
+button{
+	background-color: blue;
+	font-size: 30px;
+}
 
 @media screen and (max-width:320px){
 	form{
