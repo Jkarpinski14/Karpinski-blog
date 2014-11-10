@@ -6,3 +6,4 @@
 
 	echo "<p>Title: $title</p>";
 	echo "<p>Post: $post</p>";
+	/*echoes the variables created above*/
