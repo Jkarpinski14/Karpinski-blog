@@ -5,6 +5,7 @@
 <h1>Create Blog Post</h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+		<!--links to create-post-->
 	<div>
 		<label for="title">Title: </label>
 		<input type="text" name="Title" />
