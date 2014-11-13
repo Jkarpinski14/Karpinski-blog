@@ -21,12 +21,25 @@ button{
 	font-size: 30px;
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:1024px){
 	form{
-		
 		width:100%;
 		
 	}
-	h1 {
+	#header {
+		width: 100%;
+		background-color:green;
+	}
+
+@media screen and (max-width:320px){
+	form{
+		width:100%;
+		
+	}
+	#header {
+		width: 100%;
+		background-color:blue;
+	}
+	#img{
 		width: 100%;
 	}
