@@ -1,8 +1,9 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
+
 ?>
 
-<h1>Create Blog Post</h1>
+<h1 id="header">Create Blog Post</h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 		<!--links to create-post-->
@@ -22,5 +23,5 @@
 		<button type="submit">Submit</button>
 	</div>
 	<br>
-	<img src="http://images.radcity.net/6626/4966353.jpg" alt="nascar" height="420" width="560">
+	<img id="img" src="http://images.radcity.net/6626/4966353.jpg" alt="nascar" height="420" width="560">
 </form>

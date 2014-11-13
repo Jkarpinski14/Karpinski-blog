@@ -10,8 +10,16 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	/*checks to see that informations is recieved, and makes sure that each aspect is compatible to the string*/
 
-	echo "<p>Title: $title</p>";
-	echo "<p>Post: $post</p>";
-	/*echoes the variables created above*/
+    $query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+	/*establishes connection to database*/
+
+	if($query){
+		echo "<p>Successfully inserted post: $title</p>";
+	}
+	else {
+		echo "<p>$connection->error</p>";
+	}
+	/*echoes the if assuming the query was successful*/
 
 	$connection->close();
+	/*closes this connection*/
