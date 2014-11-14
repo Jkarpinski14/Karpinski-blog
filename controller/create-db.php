@@ -1,6 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
-	/*links to config.php*/
+	/*links to config.php; initially set to (now deleted) database.php, serves the purpose of simplifying [refactoring] to make it easier to edit and more usable, improves the look of the code wo/ affecting  the workability*/
 
 	$connection = new mysqli($host, $username, $password);
 	/*connects to arguments in database.php; has to be in same order on both pgaes*/
