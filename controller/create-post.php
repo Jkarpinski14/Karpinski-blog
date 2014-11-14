@@ -1,6 +1,6 @@
 <?php
 		
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 	
 	$connection = new mysqli($host, $username, $password, $database);
 	/*uses information from variables in database.php in order to run queries*/	
@@ -21,5 +21,5 @@
 	}
 	/*echoes the if assuming the query was successful*/
 
-	$connection->close();
+	$connection->close(); 	
 	/*closes this connection*/

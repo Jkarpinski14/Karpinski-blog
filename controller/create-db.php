@@ -1,6 +1,6 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php");
-	/*links to database.php*/
+	require_once(__DIR__ . "/../model/config.php");
+	/*links to config.php*/
 
 	$connection = new mysqli($host, $username, $password);
 	/*connects to arguments in database.php; has to be in same order on both pgaes*/
