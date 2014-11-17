@@ -9,4 +9,13 @@ class Database{
 	private $password;
 	private $username
 	/*means variable can only be accessed in this file [class]*/
+
+	public function __construct($host, $username, $password, $database){
+		$this->host = $host;
+		$this->username = $username;
+		$this->password = $password;
+		$this->database = $database;
+	}
+	/*means variable can be accessed anywhere*/
+	/*$this accesses the variables above, to only exist in that function [local variables]*/
 }
