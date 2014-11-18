@@ -18,4 +18,16 @@ class Database{
 	}
 	/*means variable can be accessed anywhere*/
 	/*$this accesses the variables above, to only exist in that function [local variables]*/
+
+	public function openConnection(){
+
+	}
+
+	public function closeConnection(){
+
+	}
+
+	public function query($string){
+
+	}
 }
