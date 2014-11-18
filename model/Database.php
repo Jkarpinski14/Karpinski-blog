@@ -20,7 +20,12 @@ class Database{
 	/*$this accesses the variables above, to only exist in that function [local variables]*/
 
 	public function openConnection(){
-
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+		/*creates new mysqli object*/
+		if($this->connection->connect_error){
+			die("Error: " . $this->connection->connect_error);
+		}
+		/*this is here in case there is an error that requires the page to terminate*/
 	}
 
 	public function closeConnection(){
