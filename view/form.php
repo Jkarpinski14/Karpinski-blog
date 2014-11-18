@@ -20,7 +20,7 @@
 	</div>
 	<br>
 	<div>
-		<button type="submit">Submit</button>
+		<button class="button" type="submit">Submit</button>
 	</div>
 	<br>
 	<img id="img" src="http://images.radcity.net/6626/4966353.jpg" alt="nascar" height="420" width="560">

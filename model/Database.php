@@ -30,6 +30,7 @@ class Database{
 
 	public function closeConnection(){
 		if(isset($this->connection)){
+			/*isset deternines if a variable is set and is not NULL*/
 			$this->connection->close();
 		}
 	}
