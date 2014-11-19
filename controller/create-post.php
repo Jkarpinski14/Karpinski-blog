@@ -17,7 +17,4 @@
 	else {
 		echo "<p>$connection->error</p>";
 	}
-	/*echoes the if assuming the query was successful*/
-
-	$connection->close(); 	
-	/*closes this connection*/
+	/*echoes the "if statement" assuming the query was successful*/
