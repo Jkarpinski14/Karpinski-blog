@@ -37,6 +37,12 @@ class Database{
 	/*closes the connection from the afore created function*/
 
 	public function query($string){
+		$this->openConnection();
+		/*calling on this function and executes the associated lines of code*/
+		$query = $this->connection->query($string);
+		/*uses the string of text to query the text from create-db*/
+		$this->closeConnection();
 
+		return $query;
 	}
 }

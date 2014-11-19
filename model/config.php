@@ -3,6 +3,8 @@
 	/*Requires the path an its location*/
 
 	$host = "localhost";
-			$username = "root";
-			$password = "root";
-			$database = "blog_db";
+	$username = "root";
+	$password = "root";
+	$database = "blog_db";
+
+	$connection = new Database($host, $username, $password, $database);

@@ -1,11 +1,8 @@
 <?php
 		
 	require_once(__DIR__ . "/../model/config.php");
+	/*gives us access to the paramaters in config.php*/
 	
-	$connection = new mysqli($host, $username, $password, $database);
-	/*uses information from variables in database.php in order to run queries*/	
-	/*mysqli is an OBJECT*/
-
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	/*validates input and checks for malicious activity & makes sure it's a string*/
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
