@@ -8,13 +8,13 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	/*checks to see that informations is recieved, and makes sure that each aspect is compatible to the string*/
 
-    $query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+    $query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 	/*establishes connection to database*/
 
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
 	}
 	else {
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 	/*echoes the "if statement" assuming the query was successful*/
