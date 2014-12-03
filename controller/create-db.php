@@ -18,3 +18,21 @@
 	}
 	
 	/*HTML tags are compatible in PHP*/
+	/*query fucntion attatched to connection variable stored in session*/
+	$query = $_SESSION["connection"]->query("CREATE TABLE users ("
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		. "username varchar(30) NOT NULL,"
+		. "email varchar(50) NOT NULL,"
+		. "password char(128) NOT NULL,"
+		. "salt char(128) NOT NULL,"
+		. "PRIMARY KEY(id))");
+	/*increments id intervals automatically*/
+	/*want to make sure no values entered can be allowed blank*/
+	/*creates new table called users in phpMyAdmin for permitting a user to log into the blog*/
+
+	if($query){
+		echo "<p>Successfully created table: users</p>";
+	}
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
