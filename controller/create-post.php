@@ -7,12 +7,15 @@
 	/*validates input and checks for malicious activity & makes sure it's a string*/
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	/*checks to see that informations is recieved, and makes sure that each aspect is compatible to the string*/
+	$date = new DateTime('today');
+	$time = new DateTime('America/Los_Angeles');
 
     $query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 	/*establishes connection to database*/
 
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
+		echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("g:i");
 	}
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
