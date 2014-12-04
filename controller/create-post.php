@@ -15,7 +15,7 @@
 
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
-		echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("g:i");
+		echo "Posted on: " . $date->format("D " . "M d, " . "Y") . " at " . $time->format("g:i");
 	}
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
