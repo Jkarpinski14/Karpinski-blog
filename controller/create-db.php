@@ -30,6 +30,7 @@
 	/*increments id intervals automatically*/
 	/*want to make sure no values entered can be allowed blank*/
 	/*creates new table called users in phpMyAdmin for permitting a user to log into the blog*/
+	/*salt provides additional data to protect blog against hacking*/
 
 	if($query){
 		echo "<p>Successfully created table: users</p>";
