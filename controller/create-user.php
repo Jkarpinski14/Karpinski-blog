@@ -6,4 +6,9 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 	/*FILTER deletes invalid characters*/
 
-	echo $email . " - " . $username . " - " . $password;
+	echo $password;
+
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
+	echo $salt;
+
+	/*salt makes hashed password unique to us*/
