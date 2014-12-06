@@ -6,9 +6,19 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 	/*FILTER deletes invalid characters*/
 
-	echo $password;
-
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
-	echo $salt;
-
 	/*salt makes hashed password unique to us*/
+	$hashedPassword = crypt($password, $salt);
+	/*prevents a duplicate password from hasing the same input*/
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email',"
+		. "username = '$username',"
+		. "password = '$hashedPassword',"
+		. "salt = '$salt'");
+
+	if($query){
+		echo "Successfully created user: $username";
+	}
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
