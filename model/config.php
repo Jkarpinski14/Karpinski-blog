@@ -1,6 +1,8 @@
 <?php
 	require_once(__DIR__ . "/Database.php");
 	session_start();
+	session_regenerate_id(true);
+	/*keeps the id constant throughtout the entire session everytime the file is called upon*/
 
 	$path = "/Karpinski-blog/";
 	/*Requires the path an its location*/

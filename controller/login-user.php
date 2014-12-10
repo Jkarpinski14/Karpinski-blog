@@ -13,6 +13,8 @@
 		/*gets the stored array of information and places it in the row variable*/
 		if($row["password"] === crypt ($password, $row["salt"])){
 			/*triple equal sign makes the password case-sensitive*/
+			$_SESSION["authenticated"] = true;
+			/*confirms that the user has logged in*/
 			echo "<p>Login Successful!</p>";
 		}
 		else{
