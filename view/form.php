@@ -1,6 +1,13 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
 
+	if(!authenticateUser()){
+		header("location: " . $path . "index.php");
+		/*if the function is run, it sends the form to index.php*/
+		die();
+	}
+	/*will kill the page if the user is not authenticated, thus stopping the execution of the program*/
 ?>
 
 <h1 id="header">Create Blog Post</h1>
