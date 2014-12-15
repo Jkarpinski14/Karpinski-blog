@@ -25,6 +25,9 @@ button{
 	background-color: blue;
 	font-size: 30px;
 }
+nav{
+	background-color: red;	
+}
 
 @media screen and (max-width:1024px){
 	form{

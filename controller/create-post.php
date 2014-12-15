@@ -21,3 +21,8 @@
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 	/*echoes the "if statement" assuming the query was successful*/
+?>
+
+<br>
+<br>
+<a href="<?php echo $path . "index.php"?>">Blog posts seen here</a>

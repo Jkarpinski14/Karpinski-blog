@@ -26,3 +26,7 @@
 		/*doesn't permait false users to know which paramater they are entering incorrectly*/
 	}
 	/*checks that information is stored in the query*/
+
+?>
+
+	<a href="<?php echo $path . "post.php"?>">Blog Post Forum</a>
