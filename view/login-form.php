@@ -4,7 +4,7 @@
 ?>
 <!--wants to access path file in controller-->
 
-<h1>Login</h1>
+<h1>Login Here</h1>
 
 <form method="post" action="<?php echo $path . "controller/login-user.php"?>">
 	<div>

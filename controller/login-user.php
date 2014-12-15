@@ -28,5 +28,5 @@
 	/*checks that information is stored in the query*/
 
 ?>
-
+	
 	<a href="<?php echo $path . "post.php"?>">Create posts here!</a>
