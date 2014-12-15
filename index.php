@@ -1,4 +1,10 @@
-
+		<a href="<?php echo $path . "register-form.php"?>">New user? Register here!</a>
+		<br>
+		<br>
+		<a href="<?php echo $path . "login-form.php"?>">Already registered? Log in here!</a>
+		<br>
+		<br>
+		<br>
 		<?php
 			require_once(__DIR__ . "/controller/login-verify.php");
 			require_once(__DIR__ . "/view/header.php");
@@ -9,6 +15,8 @@
 			require_once(__DIR__ . "/controller/create-db.php");
 			require_once(__DIR__ . "/view/footer.php");
 			require_once(__DIR__ . "/controller/read-posts.php");
+
+
 			/*Holds the index's header and footer in separate files, for conveniece*/
 			/**
 			* 
