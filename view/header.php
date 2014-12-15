@@ -11,4 +11,4 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	</head>
-	<body>
+	<body class="body1">

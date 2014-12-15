@@ -29,4 +29,4 @@
 
 ?>
 
-	<a href="<?php echo $path . "post.php"?>">Blog Post Forum</a>
+	<a href="<?php echo $path . "post.php"?>">Create posts here!</a>
