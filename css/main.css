@@ -31,6 +31,11 @@ nav{
 	font-size: 25px;
 	text-align: center;
 }
+#tritonal{
+	height: 50px;
+	color: white;
+	background-color: black;
+}
 
 
 @media screen and (max-width:1024px){
