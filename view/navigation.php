@@ -55,10 +55,23 @@
 
 	<div>
 		<p>
-			Hello, and welcome to NASCAR Nation, the weekly blog dedicated to the latest buzz surrounding the NASCAR universe. Here, you will see posts with breaking information, educated speculation, and thoughtful insight to all things NASCAR.
+			Hello, and welcome to NASCAR Nation, the weekly blog dedicated to the latest buzz surrounding the NASCAR universe. Here, you will see posts with breaking information, educated speculation, and thoughtful insight to all things NASCAR. From Daytona in the Spring to Homestead-Miami in the Fall, NASCAR Nation will follow the races in: 
+			<ul>
+			<li>The NASCAR Sprint Cup Series</li>
+			<li>Comcast Xfinity Series</li>
+			<li>Camping World Truck Series</li>
+			<li>K&N Pro Series</li>
+			<li>Toyota Mexico Series</li>
+			<li>Canadian Tire Series</li>
+			<li>Whelen All-American Series</li>
+			<li>NASCAR European Tour</li>
+			<li>ARCA, and more!</li>
+			</ul>
+			All the action from America's number 1 spectator sport, from the side by side racing and split second passes and unbelievable wrecks will find their way here!
 		</p>
 	</div>
 
+	<br>
 	<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Site Info</button>
 
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -69,3 +82,5 @@
     		</div>
   		</div>
 	</div>
+	<br>
+	<br>

@@ -1,8 +1,5 @@
 		<a href="<?php echo $path . "register-form.php"?>">New user? Register here!</a>
-		<br>
-		<br>
 		<a href="<?php echo $path . "login-form.php"?>">Already registered? Log in here!</a>
-		<br>
 		<br>
 		<br>
 		<?php
